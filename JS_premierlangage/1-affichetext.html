@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!--exercice java script affichage de texte-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Premier exercice de javascript</title>
+</head>
+<body><!--j'ai integrer javascript dans html-->
+    <script type="text/javascript">
+    
+    /*je declare mes variables ici*/ 
+    var nom = window.prompt("Saisissez votre Nom :");
+    var prenom = window.prompt("Saisissez votre Prénom");
+    
+    /* Condition de type bouléan*/
+    if (window.confirm("Êtes-vous un homme ?") == true) // == stricement egal
+  { 
+    alert("Bonjour Monsieur " + nom +" "+ prenom + "\n Bienvenue sur notre site web." ); //   "\n" saut de ligne
+  } 
+  else {
+      alert("Bonjour Madame " + nom +" "+ prenom + " Bienvenue sur notre site web.");
+  }
+    
+    </script>
+    
+</body>
+</html>

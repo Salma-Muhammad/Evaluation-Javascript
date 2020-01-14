@@ -1,0 +1,55 @@
+ /* haut de page image et texte*/
+ header {
+    display: flex; 
+}
+header p{
+    margin-left: 40%;
+    font-size: x-large;
+    color: blue;
+}
+/* mie en page de la bar de navigation*/
+nav{
+    background: black;
+    display: flex;
+    padding: 10px;  
+}
+a{
+    color: blanchedalmond;  
+}
+/* ecriture*/
+body{
+    
+    font-size: 100%;
+    text-align: left;
+
+}
+/*ajustement de la taille de du formulaire avec marge de 50%*/
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px; 
+    }
+/* espace entre les champs de saisies*/
+label{ 
+    display:block ;
+    margin-top: 10px;
+    
+
+}
+/*taille des champs de saisie*/
+input[type=text] {
+    width: 300px;
+
+}
+input[type=checkbox], input[type=radio] {
+    cursor:pointer;
+}
+/* mise en forme des bouton*/
+input[type=reset], input[type=submit] {
+    width:100px;
+    margin-left:5px;
+    margin-top: 20px;
+    font-family: verdana,arial;
+    cursor:pointer;
+
+    }

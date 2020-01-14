@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/skeleton.css">
+    <!-- utitlisation de skeleton framwork css-->
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    
+    
+    <!-- Exercice
+Réaliser un formulaire "Contact.html" correspondant au modèle cidessous, avec les contraintes suivantes :
+    *Le formulaire sera envoyé grâce à la méthode "Post" .
+    *La "Société" doit comporter au moins 1 caractère.
+    *La "Personne à contacter" doit comporter au moins 1 caractère.
+    *Le "Code postal" doit comporter 5 caractères numériques.
+    *La "Ville" doit comporter au moins 1 caractère.
+    *Le Email doit comporter au moins le caractère "@".
+
+   Le champ "Environnement technique" est une liste déroulante dans
+   laquelle on peut choisir les techniques utilisées pour le projet proposé,
+   ainsi qu'une zone de texte qui reçoit la sélection.
+   
+   Il est permis de rajouter des informations manuelles dans la zone de
+   texte.
+   La valeur "Choisissez" ne doit pas s'afficher dans la zone de texte si elle
+   a été sélectionnée.
+   
+   Prévoyez les messages appropriés en cas d'erreur de saisie -->
+    
+   
+   <form id="contact_form" action="#" method="POST">
+    <div class="container five columns offset-by-one">
+    <p>Vos Coordonnées : </p>
+    <p>*Ces zones sont obligatoires pour envoyer le fomulaire. </p>
+    
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="society">Société* : </label>
+            <input name ="society" type = "text" required>
+        </div>
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="pers">Personne à contacter* : </label>
+            <input name ="pers" type= "text" required>
+        </div>  
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="adresse">Adresse de l'entreprise* : </label>
+            <input name ="adresse" type= "text" required>
+        </div>
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="cdp">Code Postal* : </label>
+            <input name ="cdp" type= "text" required>
+        </div>
+    </div>
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="ville">Ville* : </label>
+            <input name ="ville" type= "text" required>
+        </div>
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+            <label for="email">Email* : </label>
+            <input name ="email" type= "text" placeholder="test@mailbox.com" required>
+        </div>
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+        <label for="phone">Téléphone : </label>
+        <input name ="phone" type= "text" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="u-full-width">
+        <label for="project">Sélectionnez l'environnement technique du projet : </label>
+        
+        <select class="four columns" id="Option">
+            <option value="Option 1">Choisissez</option>
+            <option value="Option 2">Access</option>
+            <option value="Option 3">Java</option>
+            <option value="Option 4">Delphi</option>
+            <option value="Option 5">Windev</option>
+            <option value="Option 6">Visual Basic</option>
+            <option value="Option 7">Power Builder</option>
+            <option value="Option 8">Internet</option>
+            <option value="Option 9">Intranet</option>
+            <option value="Option 10">Windows NT</option>
+            <option value="Option 11">Unix</option>
+            <option value="Option 12">SQL Server</option>
+            <option value="Option 12">Oracle</option>
+        </select>
+
+        <textarea class="u-full-width" id="message"></textarea>
+        </div>
+    </div>
+
+    <div class= "row">
+        <div class="u-full-width">
+            <input id="valider" type="submit" class="button-primary" value="Valider">
+            <input id="annuler" type="reset"  value="Annuler">
+        </div>
+    </div>
+</div>
+
+</form>
+
+</body>
+</html>
+   

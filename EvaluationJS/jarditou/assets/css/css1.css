@@ -1,0 +1,68 @@
+
+  /* entete de page image et texte*/
+header {
+    display: flex; 
+    margin: 0;
+}
+header p{
+    margin-left: 40%;
+    font-size: x-large;
+    color: blue;
+}
+    /* bande de navigation*/
+nav{
+    background: black;
+    display: flex;
+    padding: 10px;  
+}
+a{
+    color: blanchedalmond;  
+}
+    /*corps de la page*/
+main{
+    display: flex;
+}
+    /*image de promotion*/
+.promotion{
+    width: 100%;
+    height: 150px;
+    margin-top: 3px;
+
+}
+/* colonne de droite*/
+#colonne{
+    float:right;
+	background-color: darkslategrey;
+    width: 40%;
+    margin:0; 
+    height: auto;  
+    color: beige;
+}
+/* contenu*/
+#contenu{
+    width: auto;
+    height: 500px;
+	float:left;
+	background-color: white;
+	margin:0;
+}
+/*bande de navigation pied de page*/
+footer{
+    background: black ;
+    display: flex;
+    padding: 10px;
+    clear: both;
+    
+}
+/*faire disparaitre la colonne de droite*/
+@media screen and (max-width: 576px){
+    #colonne{
+        display:none;
+        
+    }
+/* rendre le header responsive*/
+    #header{
+        flex-direction: column;
+    }
+}
+

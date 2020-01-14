@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bienvenue sur le site de Jarditou</title>
+        <!--lien bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body><!--systeme grid 1 seul container-->
+        <div class=" container-fluid">
+            <div class="container">
+                
+            <header class="row p-1 mb-2 ">
+                <div class="col">
+                    <img src="assets/img/jarditou_logo.jpg" width="200" height="100" >
+                </div>
+                <div class="col">
+                    <h4 class=" text-uppercase text-center text-primary mt-3" >La qualité depuis 70 ans </h4>
+                </div>
+            </header>
+
+            <!--barre de navigation haut de page-->
+            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+                <!--expand permet de bloquer le bouton hamburger pour ecran sm seulement -->
+                <!--code du bouton hamburger-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!---fin code hamb-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexbootstrap.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produit_1.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_1.html">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+
+            <section>
+            <img src="assets/img/promotion.jpg" class="img-fluid mb-1 mt-1 " width = 100% alt="promotion " id="promotion" >
+                <div class="row no-gutters mb-1"> <!-- no gutters pas de dépassement -->
+                    <div class="col-8">
+                        <h2>Accueil</h2>
+                    <hr>
+                        <h4> L'entreprise</h4>
+                        <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+                        <p>Créée il y a 70 ans, notre entreprisevens des fleurs, arbustes,matériel à la maien mototrisés.
+                        <p>Implantés à Amiens, nous invtervenons dans tout le département de la Somme: Albert, Doullens, Péronne, Abbeville, Corbie.</p>
+                        <h4>Qualité</h4>
+                        <p>Nous mettons à votre disposition un services personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+                        <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>  
+                        <h4>Devis gratuit</h4>
+                        <p>Vous pouvez bien sûr contacter pour plus ampleù:;m, s informations ou pour une demande d'intervention.</p>
+                        <p>Vous souhaitez un devis? Nous vous réalisons gratuitement.</p>
+                    <hr>
+                </div>
+                <!--masqué le bloc si ecran est sm=520px -->
+                <div class="col-4 bg-info text-white d-none d-sm-block ml-0 "  id="colright">
+                    <aside>[Colonne de droite]</aside>
+                </div> 
+            </section>
+
+            <!--barre de navigation pied de page-->
+            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!--menu hamb-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"href="mentions légales">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="horaires">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="plan du site">Plan du site</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+
+        </div>
+    </div>
+       
+    <!--lien bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script> 
+    </body>
+</html>
